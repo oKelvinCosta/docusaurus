@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "homepage": "https://okelvincosta.github.io/docusaurus",
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
     "build": "docusaurus-build",
@@ -8,9 +9,10 @@
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "docusaurus": "^1.12.0"
+    "docusaurus": "^1.12.0",
+    "gh-pages": "^2.1.1"
   }
 }

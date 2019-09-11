@@ -38,7 +38,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "kelvincosta_doc",
+
+  projectName: "", // Se preencher aqui, ele gera uma pasta dentro do build com o projeto
   organizationName: "kelvincosta",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
