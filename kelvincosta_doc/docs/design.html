@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Wiki Design · Kelvin Costa</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## [Repositório](#evando-mirra)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Wiki Design · Kelvin Costa"/><meta property="og:type" content="website"/><meta property="og:url" content="https://okelvincosta.github.io/docusaurus/"/><meta property="og:description" content="## [Repositório](#evando-mirra)"/><meta property="og:image" content="https://okelvincosta.github.io/docusaurus/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://okelvincosta.github.io/docusaurus/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus/img/fav-kelvincosta.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://okelvincosta.github.io/docusaurus/blog/atom.xml" title="Kelvin Costa Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://okelvincosta.github.io/docusaurus/blog/feed.xml" title="Kelvin Costa Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus/css/main.css"/><script src="/docusaurus/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus/"><h2 class="headerTitle">Kelvin Costa</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docusaurus/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/docusaurus/docs/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus/help" target="_self">Help</a></li><li class=""><a href="/docusaurus/blog/" target="_self">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Procurar" title="Procurar"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Repositório Design</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Repositório Design</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus/docs/design">Wiki Design</a></li><li class="navListItem"><a class="navItem" href="/docusaurus/docs/vazio">Vazio</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Docusaurus</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus/docs/doc1">Example Page Latin</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">First Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus/docs/doc2">document number 2</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Second Category</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus/docs/doc3">This is document number 3</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Wiki Design</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="repositorio-evando-mirra"></a><a href="#repositorio-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Repositório</a></h2>
+<ul>
+<li>Acesso ao Repositório Design:<br>
+<a href="https://gitlab.com/fapemig/evando-mirra-design">Repositório Design</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="font-evando-mirra"></a><a href="#font-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Font</a></h2>
+<ul>
+<li>Fontes utilizadas:<br>
+<a href="https://fonts.google.com/specimen/Work+Sans">Work Sans</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="img-evando-mirra"></a><a href="#img-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Img</a></h2>
+<ul>
+<li>Pasta com imagens, ícones customizados e SVG:<br>
+<a href="https://gitlab.com/fapemig/evando-mirra-design/tree/master/img">Clique aqui</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="arquivos-xd-evando-mirra-"></a><a href="#arquivos-xd-evando-mirra-" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Arquivos .XD</a></h2>
+<h3><a class="anchor" aria-hidden="true" id="1-guia_estiloxd"></a><a href="#1-guia_estiloxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1-Guia_Estilo.xd</h3>
+<blockquote>
+<p>Guia de Estilo contendo os componentes mestres gerais e guias de como usar componentes.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="2-loginxd"></a><a href="#2-loginxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2-Login.xd</h3>
+<blockquote>
+<p>Contém telas de login, tela inicial, tela cadastro de parceria, tela de consulta.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="3-termo_formalizacaoxd"></a><a href="#3-termo_formalizacaoxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3-Termo_Formalizacao.xd</h3>
+<blockquote>
+<p>Chamada &gt; Auxílio &gt; Telas do Termo de Formalização e telas do menu contextual.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="4-cadastro_editalxd"></a><a href="#4-cadastro_editalxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4-Cadastro_Edital.xd</h3>
+<blockquote>
+<p>Chamada &gt; Auxílio &gt; Telas Cadastro do Edital.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="5-execucaoxd"></a><a href="#5-execucaoxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5-Execucao.xd</h3>
+<blockquote>
+<p>Chamada &gt; Auxílio &gt;Telas de Execução</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="6-avaliacaoxd"></a><a href="#6-avaliacaoxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6-Avaliacao.xd</h3>
+<blockquote>
+<p>Chamada &gt; Auxílio &gt; Contém telas de login, tela inicial, tela cadastro de parceria, tela de consulta.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="7-perfil_usuariosxd"></a><a href="#7-perfil_usuariosxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7-Perfil_Usuarios.xd</h3>
+<blockquote>
+<p>Telas do perfil de usuário.</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="8-gerenciamento_permissoesxd"></a><a href="#8-gerenciamento_permissoesxd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>8-Gerenciamento_Permissoes.xd</h3>
+<blockquote>
+<p>Telas Gerenciamento de Permissões.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="readme-evando-mirra"></a><a href="#readme-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Readme</a></h2>
+<ul>
+<li>Contém algumas <strong>instruções básicas</strong> e o <strong>changelog</strong> de maneira mais visual:</li>
+<li><a href="https://gitlab.com/fapemig/evando-mirra-design/blob/master/readme.md">Readme.md</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="guias-evando-mirra"></a><a href="#guias-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Guias</a></h2>
+<ul>
+<li>Acesso às instruções de uso dos componentes:</li>
+<li>Guia de Estilos (para desenvolvimento):<br>
+<a href="https://xd.adobe.com/spec/8f47a88b-250d-42b4-47a0-d285881a899a-f976/">Instruções de uso dos componentes</a></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="prototipo-evando-mirra"></a><a href="#prototipo-evando-mirra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="#evando-mirra">Protótipo</a></h2>
+<ul>
+<li>Acesso ao Protótipo Clicável:<br>
+<a href="https://xd.adobe.com/view/dde47b7f-9559-4d78-518c-1c6bf7aea8f1-abd5/?fullscreen">Protótipo Clicável</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docusaurus/docs/vazio"><span>Vazio</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#repositorio-evando-mirra"><a href="#evando-mirra">Repositório</a></a></li><li><a href="#font-evando-mirra"><a href="#evando-mirra">Font</a></a></li><li><a href="#img-evando-mirra"><a href="#evando-mirra">Img</a></a></li><li><a href="#arquivos-xd-evando-mirra-"><a href="#evando-mirra">Arquivos .XD</a></a><ul class="toc-headings"><li><a href="#1-guia_estiloxd">1-Guia_Estilo.xd</a></li><li><a href="#2-loginxd">2-Login.xd</a></li><li><a href="#3-termo_formalizacaoxd">3-Termo_Formalizacao.xd</a></li><li><a href="#4-cadastro_editalxd">4-Cadastro_Edital.xd</a></li><li><a href="#5-execucaoxd">5-Execucao.xd</a></li><li><a href="#6-avaliacaoxd">6-Avaliacao.xd</a></li><li><a href="#7-perfil_usuariosxd">7-Perfil_Usuarios.xd</a></li><li><a href="#8-gerenciamento_permissoesxd">8-Gerenciamento_Permissoes.xd</a></li></ul></li><li><a href="#readme-evando-mirra"><a href="#evando-mirra">Readme</a></a></li><li><a href="#guias-evando-mirra"><a href="#evando-mirra">Guias</a></a></li><li><a href="#prototipo-evando-mirra"><a href="#evando-mirra">Protótipo</a></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus/" class="nav-home"><img src="/docusaurus/img/fav-kelvincosta.png" alt="Kelvin Costa" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docusaurus/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docusaurus/docs/en/doc2.html">Guides (or other categories)</a><a href="/docusaurus/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/docusaurus/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/docusaurus/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 KELVIN COSTA</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '8480456ebaab8cce2d9de9bd0338954b',
+                indexName: 'T37IGKZSWQ',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
