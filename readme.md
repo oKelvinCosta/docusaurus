@@ -6,7 +6,13 @@ Projeto para testar o docusaurus
 
 O formato segue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
-## [1.0.0] 11-09-2019
+## [1.0.2] 11-09-2019
+
+### Adição :rocket:
+
+- Url do Github.io
+
+## [1.0.1] 11-09-2019
 
 ### Adição :rocket:
 

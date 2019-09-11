@@ -31,8 +31,8 @@ const siteConfig = {
 
   title: "Kelvin Costa", // Title for your website.
   tagline: "A documentação nas suas mãos",
-  url: "https://your-docusaurus-test-site.com", // Your website URL
-  baseUrl: "/", // Base URL for your project */
+  url: "https://okelvincosta.github.io", // Your website URL
+  baseUrl: "/docusaurus/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
