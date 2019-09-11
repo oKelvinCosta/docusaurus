@@ -1,6 +1,6 @@
 Projeto para testar o docusaurus
 
-[Demo](https://keepachangelog.com/en/1.0.0/),
+[Demo](https://okelvincosta.github.io/docusaurus/),
 
 # Subir para gh-pages automático
 
@@ -22,7 +22,7 @@ No package.json em `Scripts`:
 
 ```
 
-https://okelvincosta.github.io/docusaurus/
+"homepage":https://okelvincosta.github.io/docusaurus/
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 
@@ -34,7 +34,12 @@ O comando criará uma branch **gh-pages** com o conteúdo do build dentro.
 
 # Changelog
 
-O formato segue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+## [1.0.6] 11-09-2019
+
+### Correção :wrench:
+
+- Link para o demo no Readme
+- Código homepage para o Package.json no Readme
 
 ## [1.0.5] 11-09-2019
 
@@ -56,6 +61,8 @@ O formato segue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Início da implementação Algolia.
 - 2 páginas de documentação.
 - Modelo padrão do Docusaurus modificado.
+
+O formato segue [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Ícones
 
